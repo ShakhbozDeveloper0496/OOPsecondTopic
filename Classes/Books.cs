@@ -26,13 +26,12 @@ public Cars(string model, int year, decimal price, decimal speed)
     Price= price;
     Speed= speed;
     GetCarInfo();
-    CalculateDepreciation();
 }
 private void GetCarInfo()
 {
     System.Console.WriteLine($"Mashina markasi: {Model} \nIshlab chiqarilgan yili: {Year} \nmashina narxi: {Price} \nMashina tezligi: {Speed}");
 }
-private void CalculateDepreciation()
+public void CalculateDepreciation()
 {
 
     useyear = 2024 - Year;
